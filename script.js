@@ -14,10 +14,15 @@ button.addEventListener("click", checkGuess())
 
 function checkGuess() {
 
-  if (input.value == "" || input.value < MIN || input.value > MAX) {
+  if(input.value){
+
+  }
+
+  if (input.value == "" || Int(input.value) < MIN || Int(input.value) > MAX) {
     alert("Dato inalido")
     return;
   }
+
   const guess = input.value
   
   attempts = attempts + 1
